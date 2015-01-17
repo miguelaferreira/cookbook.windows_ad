@@ -1,9 +1,10 @@
 #
-# Author:: Derek Groh (<dgroh@arch.tamu.edu>)
+# Author:: Miguel Ferreira (<miguelferreira@me.com>)
 # Cookbook Name:: windows_ad
-# Resource:: group
+# Provider:: group_member
 # 
-# Copyright 2013, Texas A&M
+# Copyright 2015, Schuberg Philis B.V.
+#
 #
 # Permission is hereby granted, free of charge, to any person obtaining
 # a copy of this software and associated documentation files (the
