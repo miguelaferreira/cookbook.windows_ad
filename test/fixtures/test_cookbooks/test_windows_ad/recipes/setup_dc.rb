@@ -1,4 +1,4 @@
-%w(AD-Domain-Services RSAT-AD-PowerShell RSAT-AD-Tools).each do |feature|
+%w(AD-Domain-Services RSAT-AD-PowerShell RSAT-AD-Tools RSAT-ADDS RSAT-AD-AdminCenter).each do |feature|
   windows_feature feature do
     all      true
     provider Chef::Provider::WindowsFeaturePowershell
@@ -7,8 +7,8 @@
 end
 
 user = 'Administrator'
-pass = 'Passw=rd1234###!'
-domain = 'test.local'
+pass = 'Password1234###!'
+domain = "#{node.hostname[0..3].downcase}.local"
 
 execute "net user \"#{user}\" \"#{pass}\""
 
