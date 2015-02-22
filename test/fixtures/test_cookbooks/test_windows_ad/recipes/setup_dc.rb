@@ -31,6 +31,12 @@ windows_ad_ou 'Groups' do
   action :create
 end
 
+windows_ad_ou 'SubGroups' do
+  domain_name domain
+  ou          'AD/Groups'
+  action :create
+end
+
 windows_ad_group 'Group1' do
   domain_name domain
   ou 'AD/Groups'
